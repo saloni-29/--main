@@ -106,7 +106,7 @@ button:hover
  <?php
 include 'connection.php';
 $ids=$_GET['idtransfer'];
-$showquery="select * from `banksystem` where ID=($ids) ";
+$showquery="select * from `bankuser` where ID=($ids) ";
 $showdata=mysqli_query($con,$showquery);
 if (!$showdata) {
   printf("Error: %s\n", mysqli_error($con));
@@ -183,7 +183,7 @@ if(isset($_POST['submit']))
   
 
     $ids=$_GET['idtransfer'];
-    $senderquery="select * from `banksystem` where ID=$ids ";
+    $senderquery="select * from `bankuser` where ID=$ids ";
     $senderdata=mysqli_query($con,$senderquery);
   
     if (!$senderdata) {
@@ -193,7 +193,7 @@ if(isset($_POST['submit']))
     $arrdata=mysqli_fetch_array($senderdata);
 
     //receiverquery
-    $receiverquery="select * from `banksystem` where Email='$Receiver_email' ";
+    $receiverquery="select * from `bankuser` where Email='$Receiver_email' ";
     $receiver_data=mysqli_query($con,$receiverquery);
    
     if (!$receiver_data) {
