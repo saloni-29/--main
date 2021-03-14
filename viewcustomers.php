@@ -146,7 +146,7 @@ td
                   </div>
           <?php
           include 'connection.php';
-          $selectquery = " select * from banksystem";
+          $selectquery = " select * from bankuser";
           $query = mysqli_query($con,$selectquery);
           $numofrows = mysqli_num_rows($query);
 
