@@ -3,7 +3,7 @@
 $username = "id15696174_customer";
 $password="";
 $server ="localhost";
-$db = "bankusers";
+$db = "bankuser";
 
 
 $con = mysqli_connect($server,$username,$password,$db);
