@@ -39,7 +39,7 @@ CREATE TABLE `transaction` (
 -- Dumping data for table `transaction`
 --
 
-INSERT INTO `transaction` (`sno`, `sender`, `receiver`, `balance`, `datetime`) VALUES
+INSERT INTO `transaction` (`sno`, `sender`, `receiver`, `Amount`, `datetime`) VALUES
 (1, 'Avni Agarwal', 'Kavya Kulkarni', 1000, '2021-01-18 06:19:25'),
 (2, 'Dhruv Vats', 'Neha Singh', 5000, '2021-01-18 06:23:46'),
 (3, 'Priya Raj', 'Aman Ojha', 10000, '2021-01-18 06:25:07'),
@@ -66,7 +66,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `balance`) VALUES
+INSERT INTO `users` (`id`, `name`, `email`, `Amount`) VALUES
 (1, 'Dhruv Vats', 'dhruv@gmail.com', 50000),
 (2, 'Kavya Kulkarni', 'kavya@gmail.com', 85000),
 (3, 'Raj Patel', 'raj@gmail.com', 50000),
